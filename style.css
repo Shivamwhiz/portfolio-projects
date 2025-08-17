@@ -1,0 +1,112 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: peachpuff; 
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+main {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container {
+    display: flex; 
+    height: 45px;
+    width: 100%; 
+    max-width: 450px; 
+    margin-bottom: 40px;
+    border-radius: 12px;
+    background-color: #e0e5ec;
+    box-shadow: inset 5px 5px 10px #c8ced3, inset -5px -5px 10px #ffffff;
+}
+
+#city-input {
+    flex-grow: 1; 
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    color: #555;
+    border-radius: 12px 0 0 12px;
+}
+
+#search-button {
+    border: none;
+    background-color: #e0e5ec;
+    color: #1e85f4;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px #c8ced3, -3px -3px 6px #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+#search-button:hover {
+    color: #014b9a;
+}
+
+#search-button:active {
+    box-shadow: inset 2px 2px 5px #c8ced3, inset -2px -2px 5px #ffffff;
+}
+
+.container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.weather-card, .aqi-card {
+    background: linear-gradient(145deg, #2a2a4a, #1e1e3f);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px #121222, -5px -5px 7px #2c2c5c;
+    text-align: center;
+    width: 260px;
+    border: 1px solid #2a2a4a;
+}
+
+.weather-info img {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)); 
+}
+
+.weather-info h1, .aqi-info h1 {
+    font-size: 3.5rem;
+    margin: 5px 0;
+}
+
+.aqi-info {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-card, .aqi-card {
+        width: 85vw; 
+    }
+
+    .search-container {
+        width: 85vw;
+    }
+}

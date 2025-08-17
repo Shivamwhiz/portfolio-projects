@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & AQI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="container">
+            <div class="weather-card">
+                <h2 id="city-name">--</h2>
+                <div class="weather-info">
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="weather icon">
+                    <h1 id="temperature">--°C</h1>
+                    <p id="description">--</p>
+                    <p id="humidity">Humidity: --%</p>
+                </div>
+            </div>
+
+            <div class="aqi-card">
+                <h2>Air Quality Index (AQI)</h2>
+                <div class="aqi-info">
+                    <h1 id="aqi-value">--</h1>
+                    <p id="aqi-status">--</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
