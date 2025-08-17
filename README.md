@@ -8,7 +8,7 @@ A clean and responsive web application that provides real-time weather and Air Q
 
 ---
 
-[ClimateFlow Screenshot](path/to/your/screenshot.png)
+[ClimateFlow Screenshot](climate_img.png)
 
 ## About The Project
 
